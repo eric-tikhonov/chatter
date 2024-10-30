@@ -43,6 +43,7 @@ h1 {
   overflow-y: scroll;
   background-color: var(--dark-slate);
   color: var(--light-slate);
+  user-select: none;
 }
 
 .chat-window::-webkit-scrollbar {
