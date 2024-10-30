@@ -35,7 +35,7 @@ h1 {
 
 .chat-window {
   max-width: 600px;
-  width: 90%;
+  width: 93%;
   padding: 20px;
   border: 1px solid var(--light-slate);
   border-radius: var(--border-radius);
@@ -61,14 +61,7 @@ h1 {
 
 .chat-message {
   margin: 10px 0;
-}
-
-.input-container {
-  display: flex;
-  align-items: center;
-  width: 100%; /* Expand to the start of div content */
-  max-width: 600px;
-  margin: 10px auto 0 0;
+  text-align: left;
 }
 
 input {
@@ -79,7 +72,7 @@ input {
   background-color: var(--light-slate);
   color: var(--navy);
   text-align: left;
-  margin-left: 0; /* Remove left margin */
+  margin-left: 0;
 }
 
 button {
@@ -90,7 +83,7 @@ button {
   cursor: pointer;
   border-radius: var(--border-radius);
   margin-left: 10px;
-  flex-shrink: 0; /* Prevents button from shrinking */
+  flex-shrink: 0;
 }
 
 button:hover {
@@ -103,3 +96,39 @@ button:hover {
   width: 90%;
   margin: 0 auto;
 }
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 10px auto 0 0;
+}
+
+.message-input {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.message-input input {
+  width: 100%;
+}
+
+.send-button {
+  background-color: var(--tan);
+  border: none;
+  color: var(--dark-slate);
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  margin-left: 20px;
+  flex-shrink: 0;
+  padding-right: 10px;
+}
+
+.send-button:hover {
+  background-color: var(--light-slate);
+  color: var(--dark-slate);
+}
+
+
